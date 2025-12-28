@@ -1,0 +1,10 @@
+[
+    {
+        "role": "User",
+        "message": "hello, how are you"
+    },
+    {
+        "role": "Aura Assistant",
+        "message": "Hello there! I'm doing great, thank you for asking. As an AI, I don't experience feelings in the same way humans do, but I'm always ready and happy to help you.\n\nHow are you doing today? And what can I assist you with?"
+    }
+]
