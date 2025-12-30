@@ -29,6 +29,7 @@ class AuraAssistant:
         full_response = self.engine.generate(prompt)
         self.memory.add("Aura Assistant", full_response)
 
-        for word in full_response.split():
-            yield word + " "
-            time.sleep(0.05)
+        # ✅ Stream by LINE (markdown-safe)
+        for line in full_response.split("\n"):
+            yield line + "\n"
+            time.sleep(0.08)
