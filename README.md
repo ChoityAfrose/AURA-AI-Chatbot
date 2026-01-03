@@ -1,16 +1,17 @@
 # 🧠 Aura – Personal AI Assistant
 
-Aura is a smart, role-based AI assistant built using Python, Streamlit, and Google Gemini API. It provides streaming responses, chat memory, and multiple assistant roles.
+Aura is a smart, role-based AI assistant built with Python, Streamlit, and Google Gemini API.
+It provides a modern ChatGPT-style interface with streaming responses, memory, smart greetings, role switching, and UX enhancements.
 
 ## 🎯 Project Objective
 
-The goal of this project is to design and develop a personal AI assistant capable of:
+The objective of Aura is to demonstrate how to build a production-style AI assistant using clean architecture and OOP principles that can:
 
-- Answering general questions
-- Helping with learning and productivity
-- Acting based on different assistant roles
-- Maintaining conversation history
-- Providing real-time streaming responses
+- Answer general and technical questions
+- Adapt behavior based on selected assistant roles
+- Stream responses in real time
+- Maintain and manage conversation memory
+- Provide a polished user experience
 
 ## 🛠 Tech Stack
 
@@ -27,6 +28,7 @@ The goal of this project is to design and develop a personal AI assistant capabl
 - Inheritance
 - Modular Coding
 - Separation of Concerns
+- Single Responsibility Principle
 
 ## 🤖 Assistant Roles
 
@@ -45,13 +47,21 @@ The goal of this project is to design and develop a personal AI assistant capabl
 - Uses code examples
 - Focuses on implementation details
 
+### 🟠 Resume Helper
+- Helps improve resumes
+- Suggests professional wording
+- Provides structured feedback
+
 ## ✨ Core Features
 
 - ChatGPT-style chat interface
+- Smart greeting based on time of day
 - Role-based prompt behavior
-- Markdown-safe streaming responses
+- Response length control (Short / Medium / Detailed)
+- Streaming responses (word-by-word)
+- Animated typing indicator (UX polish)
 - Persistent conversation memory (JSON)
-- Clear memory option
+- Clear memory functionality
 - Export chat history as `.txt`
 - Secure API key handling using `.env`
 
@@ -60,19 +70,19 @@ The goal of this project is to design and develop a personal AI assistant capabl
 ```text
 AURA_AI_CHATBOT/
 │
-├── app.py
+├── app.py                      # Streamlit UI & app logic
 │
 ├── Aura/
-│   ├── assistant.py
-│   ├── gemini_engine.py
-│   ├── prompt_controller.py
-│   ├── memory.py
-│   └── export_chat.py
+│   ├── assistant.py            # Core assistant logic
+│   ├── gemini_engine.py        # Gemini API wrapper
+│   ├── prompt_controller.py    # Role & response control
+│   ├── memory.py               # JSON-based memory
+│   └── export_chat.py          # Chat export feature
 │
 ├── config/
-│   └── settings.py
+│   └── settings.py             # Environment & config loader
 │
-├── .env
+├── .env                        # API key (ignored by git)
 ├── requirements.txt
 └── README.md
 
@@ -135,8 +145,9 @@ Streamlit Chat UI
 
 ## Author
 
+Romena Afrose Choity  
 Assistant Programmer at Bangabhaban  
 Full-Stack Data Science & Generative AI Learner | Python | NLP | AI Automation
 
 ## 📄 License
-This project is intended for educational purposes.
+This project is intended for Educational Purposes.
