@@ -141,7 +141,7 @@ Streamlit Chat UI
 ```
 ## 🎥 Project Demo Video
 
-[▶️ Watch Project Demo Video](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[▶️ Watch Project Demo Video](https://www.linkedin.com/posts/choityromena_ai-generativeai-python-activity-7414233850194669568-lf-I?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEtCk1gBGeWIL99lLclKYglEj8FnMYtkIM0)
 
 ## Author
 
